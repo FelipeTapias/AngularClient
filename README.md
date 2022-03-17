@@ -6,22 +6,39 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+### **Why do I doing it?**
+```
+In this way I can consolidate knowledge and learn more about Angular. 
+Another thing very important, I have a lot of fun learning.
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## **Modular Arquitecture:** [Click me](https://ngchallenges.gitbook.io/example-angular/kanban/kanban/arquitectura/arquitectura-modular)
 
-## Build
+```
+Generate new project
+ng new [name-project]
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Generate module with routes
+ng g m [name-module] --routing
 
-## Running unit tests
+Generate page with module, route and component
+ng g m pages/[name] -m pages-routing --route [name]
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice.
+## **Desing:**
 
-## Further help
+#### **TailWind:** *Documentation:* [Here](https://tailwindui.com/preview)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+#### **CSS:**  *Documentation:* [Here](https://developer.mozilla.org/es/docs/Web/CSS)
+
+#
+
+### **Versions**
+```
+Angular: V12.0.0
+```
+
+
+> *Author:* <b>Anfeta</b>
