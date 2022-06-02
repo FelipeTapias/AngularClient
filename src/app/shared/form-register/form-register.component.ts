@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
+
 
 @Component({
   selector: 'app-form-register',
@@ -7,9 +9,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormRegisterComponent implements OnInit {
 
-  constructor() { }
+  @Output() sendData = new EventEmitter();
+  formUser: FormGroup;
 
-  ngOnInit(): void {
+  constructor() {
+    this.formUser = new FormGroup({
+      name: new FormControl(),
+      userName: new FormControl(),
+      lastName: new FormControl(),
+      idDocument: new FormControl(),
+      email: new FormControl(),
+      password: new FormControl(),
+      URLImage: new FormControl(),
+      quote: new FormControl(),
+      birthDayDate: new FormControl()
+    });
   }
 
+  ngOnInit(): void {
+    
+  }
+
+  onSubmitData() {
+    this.sendData.emit(this.formUser.value);
+  }
+
+
 }
+
