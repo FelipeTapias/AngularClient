@@ -6,13 +6,15 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { FormRegisterComponent } from './form-register/form-register.component';
+import { FormLoginComponent } from './form-login/form-login.component';
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
-    FormRegisterComponent
+    FormRegisterComponent,
+    FormLoginComponent
   ],
   imports: [
     CommonModule,
@@ -23,7 +25,8 @@ import { FormRegisterComponent } from './form-register/form-register.component';
   exports:[
     HeaderComponent,
     FooterComponent,
-    FormRegisterComponent
+    FormRegisterComponent,
+    FormLoginComponent
   ]
 })
 export class SharedModule { }
