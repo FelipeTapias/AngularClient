@@ -15,8 +15,8 @@ export class FormRegisterComponent implements OnInit {
   constructor() {
     this.formUser = new FormGroup({
       name: new FormControl(),
-      userName: new FormControl(),
       lastName: new FormControl(),
+      userName: new FormControl(),
       idDocument: new FormControl(),
       email: new FormControl(),
       password: new FormControl(),
@@ -27,7 +27,7 @@ export class FormRegisterComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    
+
   }
 
   onSubmitData() {

@@ -1,5 +1,6 @@
 export interface User extends UserDate {
     name: String;
+    lastName: String;
     userName: String;
     idDocument: number;
     email: String;
@@ -9,6 +10,4 @@ export interface User extends UserDate {
 }
 
 interface UserDate {
-    birthDayDate: Date;
-    dateCreate: Date;
 }
