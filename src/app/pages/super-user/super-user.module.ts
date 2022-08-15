@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { SuperUserRoutingModule } from './super-user-routing.module';
 import { SuperUserComponent } from './super-user.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { SuperUserComponent } from './super-user.component';
   ],
   imports: [
     CommonModule,
-    SuperUserRoutingModule
+    SuperUserRoutingModule,
+    SharedModule
   ]
 })
 export class SuperUserModule { }

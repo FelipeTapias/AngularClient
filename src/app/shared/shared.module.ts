@@ -7,6 +7,9 @@ import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { FormRegisterComponent } from './form-register/form-register.component';
 import { FormLoginComponent } from './form-login/form-login.component';
+import { UserTableComponent } from './user-table/user-table.component';
+import { FilterPipe } from './pipes/filter.pipe';
+import { SearchInputComponent } from './search-input/search-input.component';
 
 
 @NgModule({
@@ -14,7 +17,10 @@ import { FormLoginComponent } from './form-login/form-login.component';
     HeaderComponent,
     FooterComponent,
     FormRegisterComponent,
-    FormLoginComponent
+    FormLoginComponent,
+    UserTableComponent,
+    FilterPipe,
+    SearchInputComponent
   ],
   imports: [
     CommonModule,
@@ -26,7 +32,12 @@ import { FormLoginComponent } from './form-login/form-login.component';
     HeaderComponent,
     FooterComponent,
     FormRegisterComponent,
-    FormLoginComponent
+    FormLoginComponent,
+    UserTableComponent,
+    SearchInputComponent
+  ],
+  providers: [
+    FilterPipe
   ]
 })
 export class SharedModule { }
